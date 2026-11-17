@@ -1,0 +1,76 @@
+:root {
+  --fondo: #f6f8fa;
+  --tarjeta: #ffffff;
+  --texto: #1f2328;
+  --secundario: #59636e;
+  --borde: #d1d9e0;
+  --acento: #0969da;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: start center;
+  padding: 48px 16px;
+  box-sizing: border-box;
+  background-color: var(--fondo);
+  color: var(--texto);
+  line-height: 1.5;
+  font-family: system-ui, sans-serif;
+}
+
+.tareas {
+  width: min(420px, 100%);
+  padding: 28px;
+  border: 1px solid var(--borde);
+  border-radius: 16px;
+  background-color: var(--tarjeta);
+}
+
+.tareas h1 {
+  margin: 0 0 20px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+form label {
+  width: 100%;
+  color: var(--secundario);
+}
+
+form input,
+form button {
+  padding: 10px 14px;
+  border: 1px solid var(--borde);
+  border-radius: 8px;
+  font: inherit;
+}
+
+form input {
+  flex: 1;
+  min-width: 0;
+  background-color: var(--tarjeta);
+  color: var(--texto);
+}
+
+form button {
+  border-color: var(--acento);
+  background-color: var(--acento);
+  color: #ffffff;
+  cursor: pointer;
+}
+
+form button:hover {
+  opacity: 0.9;
+}
+
+#lista {
+  list-style: none;
+  margin: 20px 0 0;
+  padding: 0;
+}
